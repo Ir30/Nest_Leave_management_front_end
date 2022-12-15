@@ -16,7 +16,8 @@ import { SearchEmployeeComponent } from './search-employee/search-employee.compo
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { HomeComponent } from './home/home.component';
 import { EmpLoginComponent } from './emp-login/emp-login.component';
-import { ViewUserProfileComponent } from './view-user-profile/view-user-profile.component'
+import { ViewUserProfileComponent } from './view-user-profile/view-user-profile.component';
+import { NavUserComponent } from './nav-user/nav-user.component'
 
 
 const myRouter:Routes=[
@@ -71,7 +72,8 @@ const myRouter:Routes=[
     EditEmployeeComponent,
     HomeComponent,
     EmpLoginComponent,
-    ViewUserProfileComponent
+    ViewUserProfileComponent,
+    NavUserComponent
   ],
   imports: [
     BrowserModule,
