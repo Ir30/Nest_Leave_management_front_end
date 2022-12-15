@@ -1,0 +1,42 @@
+
+<section class="vh-100" style="background-color: #9de2ff;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-md-9 col-lg-7 col-xl-5 ">
+          <div class="card shadow" style="border-radius: 15px;">
+            <div class="card-body p-4">
+              <div class="d-flex text-black">
+                <div class="flex-shrink-0">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwOrDofQcrrcB4qw-zaA4abjthXEbAsm3alu6awvCq_26uIrhC6n2P9AIKwj-eaIs_TpM&usqp=CAU"
+                    alt="Generic placeholder image" class="img-fluid"
+                    style="width: 180px; border-radius: 10px;">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h5 class="mb-1">{{data[0].name}}</h5>
+                  <p class="mb-2 pb-1" style="color: #2b2a2a;">{{data[0].designation}}</p>
+                  <div class="d-flex justify-content-start rounded-3 p-2 mb-2"
+                    style="background-color: #efefef;">
+                    <div>
+                      <p class="small text-muted mb-1">Emp Code</p>
+                      <p class="mb-0">{{data[0].empCode}}</p>
+                    </div>
+                    <div class="px-3">
+                      <p class="small text-muted mb-1">Emp Id</p>
+                      <p class="mb-0">{{data[0].id}}</p>
+                    </div>
+                    <div>
+                      <p class="small text-muted mb-1">Username</p>
+                      <p class="mb-0">{{data[0].username}}</p>
+                    </div>
+                  </div>
+                  <p class="mb-1 pb-1" style="color: #2b2a2a;">Emile:{{data[0].email}}</p>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
