@@ -24,7 +24,8 @@ export class EmpLoginComponent {
     this.api.employeeLogin(data).subscribe(
       (res:any)=>{
         if (res.status=="success") {
-          alert("valid login")
+          // alert("valid login")
+          this.route.navigate(["/user_profile"])
           localStorage.setItem("emp_id",res.userInfo)
         } else {
           alert("Invalid Credentials!")
