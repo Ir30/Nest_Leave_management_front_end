@@ -49,4 +49,8 @@ export class ApiService {
   securityProfile = (data:any)=>{
     return this.http.post("http://localhost:8080/securityProfile",data)
   }
+
+  visitorEntry = (data:any)=>{
+    return this.http.post("http://localhost:8080/visitor_log",data)
+  }
 }
