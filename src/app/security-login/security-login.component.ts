@@ -20,7 +20,8 @@ export class SecurityLoginComponent {
     this.api.securityLogin(data).subscribe(
       (res:any)=>{
         if (res.status == "success") {
-          alert("login succes")
+          // alert("login succes")
+          this.route.navigate(["/security_profile"])
           localStorage.setItem("security_id",res.userInfo)
         } else {
           alert("Invalid credentials..")
