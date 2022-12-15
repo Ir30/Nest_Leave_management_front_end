@@ -1,0 +1,47 @@
+<app-admin-nav></app-admin-nav>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row m-5 p-5">
+                <h2 class="text-secondary text-center">Add Employee</h2>
+                <hr>
+
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-4">
+                    <label for="" class="label-control">Name</label>
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-5">
+                    <button class="btn btn-success " (click)="searchEmployee()">Search</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-5">
+                    <table class="table table-striped-columns">
+                        <thead>
+                          <tr>
+                            <th scope="col">Employee code</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Designation</th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let i of data">
+                            <td>{{i.empCode}}</td>
+                            <td>{{i.name}}</td>
+                            <td>{{i.email}}</td>
+                            <td>{{i.phone}}</td>
+                            <td>{{i.designation}}</td>
+
+                            <button class="btn btn-danger btn-small" (click)="deleteEmployee(i.id)">Delete</button>
+
+                            
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

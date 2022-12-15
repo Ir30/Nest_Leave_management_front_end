@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row div col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 p-5 g-5 mx-5">
+        <div class="row p-5 mt-5 ">
+            <div class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3"></div>
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 card shadow g-5 p-5 " style="border-radius:15px;width: 450px;">
+                <form>
+                    <div class="form-outline mb-4">
+                        <h2 class=".text-center">Admin Login</h2>
+                    </div>
+                    <div class="form-outline mb-4">
+                    <label class="form-label" for="">Username:</label>
+                      <input name="username" [(ngModel)]="username" type="text" class="form-control" />
+                      
+                    </div>
+                  
+                
+                    <div class="form-outline mb-4">
+                      <label class="form-label">Password</label>
+                      <input name="password" [(ngModel)]="password" type="password"  class="form-control" />
+                    </div>
+                    <div class="form-out-line mb-1">
+                        <a class="btn btn-success" (click)="readValue()">login</a><br>
+                        <a class="g-3" routerLink="/user_login">User login</a>
+                    </div>
+                  
+                    
+                  </form>
+            </div>
+            <div class="col col col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3"></div>
+
+
+          
+        </div>
+    </div>
+</div>

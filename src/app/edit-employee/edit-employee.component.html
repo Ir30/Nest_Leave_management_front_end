@@ -1,0 +1,66 @@
+<app-admin-nav></app-admin-nav>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row m-5 p-5">
+                <h2 class="text-secondary text-center">Edit Employee</h2>
+                <hr>
+
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-4">
+                    <label for="" class="label-control">Name</label>
+                    <input  name="name" [(ngModel)]="name" type="text" class="form-control" value="hhdskj">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-5">
+                    <button class="btn btn-success " (click)="searchEmployee()">Search</button>
+
+                </div>
+                <br>
+                <hr class="mt-3">
+                
+
+
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">Name</label>
+                    <input  name="name" [(ngModel)]="name" type="text" class="form-control" >
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">Employee Code</label>
+                    <input value="{{data[0].empCode}}" name="empCode" [(ngModel)]="empCode" type="text" class="form-control">
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">Email</label>
+                    <input value="{{data[0].email}}" name="email" [(ngModel)]="email" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">Phone</label>
+                    <input value="{{data[0].phone}}" name="phone" [(ngModel)]="phone" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">Designation</label>
+                    <input value="{{data[0].designation}}" name="designation" [(ngModel)]="designation" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">Username</label>
+                    <input value="{{data[0].username}}" name="username" [(ngModel)]="username" type="text" class="form-control">
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">Password</label>
+                    <input value="{{data[0].password}}" name="password" [(ngModel)]="password" type="password" class="form-control">
+                </div>
+                
+                
+                
+
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-5">
+                    <button class="btn btn-success" >Submit</button>
+                </div>
+
+
+
+                
+            </div>
+        </div>
+    </div>
+</div>
