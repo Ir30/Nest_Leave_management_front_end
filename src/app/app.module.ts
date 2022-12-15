@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,7 +18,9 @@ import { HomeComponent } from './home/home.component';
 import { EmpLoginComponent } from './emp-login/emp-login.component';
 import { ViewUserProfileComponent } from './view-user-profile/view-user-profile.component';
 import { NavUserComponent } from './nav-user/nav-user.component';
-import { LeaveApplicationComponent } from './leave-application/leave-application.component'
+import { LeaveApplicationComponent } from './leave-application/leave-application.component';
+import { SecurityLoginComponent } from './security-login/security-login.component';
+import { NavSecurityComponent } from './nav-security/nav-security.component'
 
 
 const myRouter:Routes=[
@@ -61,6 +63,10 @@ const myRouter:Routes=[
   {
     path:"leave_application",
     component:LeaveApplicationComponent
+  },
+  {
+    path:"security_login",
+    component:SecurityLoginComponent
   }
 ]
 
@@ -79,7 +85,9 @@ const myRouter:Routes=[
     EmpLoginComponent,
     ViewUserProfileComponent,
     NavUserComponent,
-    LeaveApplicationComponent
+    LeaveApplicationComponent,
+    SecurityLoginComponent,
+    NavSecurityComponent
   ],
   imports: [
     BrowserModule,
