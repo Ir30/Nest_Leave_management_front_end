@@ -1,0 +1,74 @@
+<app-nav-security></app-nav-security>
+<section class="h-100 h-custom mt-5" style="background-color: #5cacd7; ">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-8 col-xl-6">
+          <div class="card rounded-3 shadow">
+           
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2 text-center">Employee Log</h3>
+  
+              <form class="px-md-2">
+
+                <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                    <div class="col-">
+    
+                      <div class="form-outline">
+                        <label class="form-label" >Emp Code</label>
+                        <input name="emp_code" [(ngModel)]="emp_code" type="text"  class="form-control" />
+                      </div>
+    
+                    </div>
+                    
+                  </div>
+  
+  
+                
+  
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+  
+                    <div class="form-outline datepicker">
+                      <label  class="form-label">Entry Time</label>
+                      <input name="enter_time" [(ngModel)]="enter_time" type="time" class="form-control" />
+                    </div>
+  
+                  </div>
+                  <div class="col-md-6 mb-4">
+
+                    <div class="form-outline datepicker">
+                        <label  class="form-label">Exit Time</label>
+                        <input name="exit_time" [(ngModel)]="exit_time" type="time" class="form-control" />
+                    </div>
+                    
+  
+                  </div>
+                </div>
+  
+                
+  
+                <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                  <div class="col-m">
+  
+                    <div class="form-outline datepicker">
+                        <label  class="form-label">Date</label>
+                        <input name="date" [(ngModel)]="date" type="date" class="form-control" />
+                    </div>
+                    
+  
+                  </div>
+
+                  
+                  
+                </div>
+  
+                <button type="submit" class="btn btn-success btn-lg mb-1"(click)="addEmpLog()" >Submit</button>
+  
+              </form>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
