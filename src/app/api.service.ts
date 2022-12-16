@@ -53,4 +53,8 @@ export class ApiService {
   visitorEntry = (data:any)=>{
     return this.http.post("http://localhost:8080/visitor_log",data)
   }
+
+  addEmpLog = (data:any)=>{
+    return this.http.post("http://localhost:8080/emplog",data)
+  }
 }

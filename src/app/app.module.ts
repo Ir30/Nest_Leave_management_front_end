@@ -22,7 +22,8 @@ import { LeaveApplicationComponent } from './leave-application/leave-application
 import { SecurityLoginComponent } from './security-login/security-login.component';
 import { NavSecurityComponent } from './nav-security/nav-security.component';
 import { SecurityProfileComponent } from './security-profile/security-profile.component';
-import { VistorLogEntryComponent } from './vistor-log-entry/vistor-log-entry.component'
+import { VistorLogEntryComponent } from './vistor-log-entry/vistor-log-entry.component';
+import { EmpLogComponent } from './emp-log/emp-log.component'
 
 
 const myRouter:Routes=[
@@ -77,6 +78,10 @@ const myRouter:Routes=[
   {
     path:"visitor_Entry",
     component:VistorLogEntryComponent
+  },
+  {
+    path:"empLog",
+    component:EmpLogComponent
   }
 ]
 
@@ -99,7 +104,8 @@ const myRouter:Routes=[
     SecurityLoginComponent,
     NavSecurityComponent,
     SecurityProfileComponent,
-    VistorLogEntryComponent
+    VistorLogEntryComponent,
+    EmpLogComponent
   ],
   imports: [
     BrowserModule,
