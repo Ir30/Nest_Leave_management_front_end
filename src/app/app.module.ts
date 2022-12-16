@@ -24,6 +24,7 @@ import { NavSecurityComponent } from './nav-security/nav-security.component';
 import { SecurityProfileComponent } from './security-profile/security-profile.component';
 import { VistorLogEntryComponent } from './vistor-log-entry/vistor-log-entry.component';
 import { EmpLogComponent } from './emp-log/emp-log.component'
+import { ViewDailylogsComponent } from './view-dailylogs/view-dailylogs.component';
 
 
 const myRouter:Routes=[
@@ -82,6 +83,10 @@ const myRouter:Routes=[
   {
     path:"empLog",
     component:EmpLogComponent
+  },
+  {
+    path:"view_log",
+    component:ViewDailylogsComponent
   }
 ]
 
