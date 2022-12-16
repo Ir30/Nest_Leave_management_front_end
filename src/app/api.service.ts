@@ -37,4 +37,24 @@ export class ApiService {
   employeeLogin = (data:any)=>{
     return this.http.post("http://localhost:8080/employeeLogin",data)
   }
+
+  viewEmployeeProfile = (data:any)=>{
+    return this.http.post("http://localhost:8080/employeeProfile",data)
+  }
+
+  securityLogin = (data:any)=>{
+    return this.http.post("http://localhost:8080/securityLogin",data)
+  }
+
+  securityProfile = (data:any)=>{
+    return this.http.post("http://localhost:8080/securityProfile",data)
+  }
+
+  visitorEntry = (data:any)=>{
+    return this.http.post("http://localhost:8080/visitor_log",data)
+  }
+
+  addEmpLog = (data:any)=>{
+    return this.http.post("http://localhost:8080/emplog",data)
+  }
 }

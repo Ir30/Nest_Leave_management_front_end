@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,7 +15,15 @@ import { ViewallEmployeeComponent } from './viewall-employee/viewall-employee.co
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { HomeComponent } from './home/home.component';
-import { EmpLoginComponent } from './emp-login/emp-login.component'
+import { EmpLoginComponent } from './emp-login/emp-login.component';
+import { ViewUserProfileComponent } from './view-user-profile/view-user-profile.component';
+import { NavUserComponent } from './nav-user/nav-user.component';
+import { LeaveApplicationComponent } from './leave-application/leave-application.component';
+import { SecurityLoginComponent } from './security-login/security-login.component';
+import { NavSecurityComponent } from './nav-security/nav-security.component';
+import { SecurityProfileComponent } from './security-profile/security-profile.component';
+import { VistorLogEntryComponent } from './vistor-log-entry/vistor-log-entry.component';
+import { EmpLogComponent } from './emp-log/emp-log.component'
 
 
 const myRouter:Routes=[
@@ -50,6 +58,30 @@ const myRouter:Routes=[
   {
     path:"edit_emp",
     component:EditEmployeeComponent
+  },
+  {
+    path:"user_profile",
+    component:ViewUserProfileComponent
+  },
+  {
+    path:"leave_application",
+    component:LeaveApplicationComponent
+  },
+  {
+    path:"security_login",
+    component:SecurityLoginComponent
+  },
+  {
+    path:"security_profile",
+    component:SecurityProfileComponent
+  },
+  {
+    path:"visitor_Entry",
+    component:VistorLogEntryComponent
+  },
+  {
+    path:"empLog",
+    component:EmpLogComponent
   }
 ]
 
@@ -65,7 +97,15 @@ const myRouter:Routes=[
     SearchEmployeeComponent,
     EditEmployeeComponent,
     HomeComponent,
-    EmpLoginComponent
+    EmpLoginComponent,
+    ViewUserProfileComponent,
+    NavUserComponent,
+    LeaveApplicationComponent,
+    SecurityLoginComponent,
+    NavSecurityComponent,
+    SecurityProfileComponent,
+    VistorLogEntryComponent,
+    EmpLogComponent
   ],
   imports: [
     BrowserModule,
